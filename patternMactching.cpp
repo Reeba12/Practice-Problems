@@ -8,11 +8,22 @@ int main()
     //  ****
     // *****
     int n=5;
+    // for (int i = 1; i <=n; i++) {
+    //    for (int j = 1; j<=n; j++) {
+    //        if(j<=n-i){
+    //            cout<<" ";
+    //        }else cout<<"*";
+    //    }
+    //    cout<<endl;
+    // }
+    // 1
+    // 22
+    // 333
+    // 4444
+    // 55555
     for (int i = 1; i <=n; i++) {
-       for (int j = 1; j<=n; j++) {
-           if(j<=n-i){
-               cout<<" ";
-           }else cout<<"*";
+        for (int j = 1; j<=i; j++) {
+          cout<<i;
        }
        cout<<endl;
     }
