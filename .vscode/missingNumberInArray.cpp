@@ -6,7 +6,7 @@ int solution(vector<int> statues) {
      int statuesNeeded = 0;
   sort(statues.begin(),statues.end());
     // Iterate through array and find gaps in values
-    for(int i = 0; i < statues.size(); i++) {
+    for(int i = 0; i < statues.size()-1; i++) {
         if(statues[i + 1] - statues[i] > 1) {
             statuesNeeded += statues[i + 1] - statues[i] - 1;
         }
